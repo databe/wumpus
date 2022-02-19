@@ -1,0 +1,1585 @@
+2022-02-18 18:47:16,901 |--> INFO: 
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-18 18:47:16.901465 ----------------------------------------
+2022-02-18 18:47:16,907 |--> INFO: 
+Tamaño del tablero: 5x5.
+Pozos: 4.
+Flechas 2.
+2022-02-18 18:47:16,908 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[4 0 0 1 0]
+ [0 4 0 4 0]
+ [0 0 0 0 0]
+ [3 0 0 2 4]
+ [0 0 0 0 0]].
+2022-02-18 18:47:16,908 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': True, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]].
+2022-02-18 18:47:16,909 |--> INFO: El jugador está en direccion N
+2022-02-18 18:47:28,356 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[4 0 0 1 0]
+ [0 4 0 4 0]
+ [0 0 0 0 0]
+ [3 0 0 2 4]
+ [0 0 0 0 0]]
+2022-02-18 18:47:28,356 |--> INFO: El jugador está en direccion N
+2022-02-18 18:47:30,948 |--> INFO: El jugador ha girado a la derecha y ahora va en direccion E
+2022-02-18 18:47:30,948 |--> INFO: El jugador está en direccion E
+2022-02-18 18:47:32,708 |--> INFO: El jugador está en direccion E
+2022-02-18 18:47:34,060 |--> INFO: El jugador ha girado a la derecha y ahora va en direccion S
+2022-02-18 18:47:34,060 |--> INFO: El jugador está en direccion S
+2022-02-18 18:47:35,484 |--> INFO: El jugador está en direccion S
+2022-02-18 18:47:41,860 |--> INFO: El jugador está en direccion S
+2022-02-18 18:49:44,016 |--> INFO: El jugador ha introducido un comando no permitido:
+ .
+2022-02-18 18:49:46,441 |--> INFO: El jugador calló en un pozo y quedó eliminado:
+[[4 0 0 0 0]
+ [0 4 1 0 0]
+ [0 0 0 0 0]
+ [3 0 0 2 4]
+ [0 0 0 0 0]]
+2022-02-18 18:49:56,081 |--> INFO: 
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-18 18:49:56.080930 ----------------------------------------
+2022-02-18 18:49:56,084 |--> INFO: 
+Tamaño del tablero: 4x4.
+Pozos: 3.
+Flechas 2.
+2022-02-18 18:49:56,085 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[0 4 3 4]
+ [2 0 0 0]
+ [0 0 0 1]
+ [0 0 4 0]].
+2022-02-18 18:49:56,085 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': True, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]].
+2022-02-18 18:49:56,085 |--> INFO: El jugador está en direccion N
+2022-02-18 18:49:58,378 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 4 3 4]
+ [2 0 0 0]
+ [0 0 0 1]
+ [0 0 4 0]]
+2022-02-18 18:49:58,379 |--> INFO: El jugador está en direccion N
+2022-02-18 18:50:01,161 |--> INFO: El jugador ha girado a la izquierda y ahora va en direccion O
+2022-02-18 18:50:01,161 |--> INFO: El jugador está en direccion O
+2022-02-18 18:50:02,218 |--> INFO: El jugador está en direccion O
+2022-02-18 18:50:03,930 |--> INFO: El jugador calló en un pozo y quedó eliminado:
+[[0 4 3 1]
+ [2 0 0 0]
+ [0 0 0 0]
+ [0 0 4 0]]
+2022-02-18 18:50:15,785 |--> INFO: 
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-18 18:50:15.785773 ----------------------------------------
+2022-02-18 18:50:15,789 |--> INFO: 
+Tamaño del tablero: 4x4.
+Pozos: 3.
+Flechas 2.
+2022-02-18 18:50:15,790 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[0 4 3 4]
+ [0 0 0 1]
+ [2 0 0 4]
+ [0 0 0 0]].
+2022-02-18 18:50:15,790 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': True, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]].
+2022-02-18 18:50:15,790 |--> INFO: El jugador está en direccion N
+2022-02-18 18:50:18,745 |--> INFO: El jugador ha girado a la izquierda y ahora va en direccion O
+2022-02-18 18:50:18,745 |--> INFO: El jugador está en direccion O
+2022-02-18 18:50:19,600 |--> INFO: El jugador ha girado a la izquierda y ahora va en direccion S
+2022-02-18 18:50:19,600 |--> INFO: El jugador está en direccion S
+2022-02-18 18:50:21,993 |--> INFO: El jugador está en direccion S
+2022-02-18 18:50:23,489 |--> INFO: El jugador ha girado a la derecha y ahora va en direccion O
+2022-02-18 18:50:23,489 |--> INFO: El jugador está en direccion D
+2022-02-18 18:50:57,136 |--> INFO: 
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-18 18:50:57.136170 ----------------------------------------
+2022-02-18 18:50:57,146 |--> INFO: 
+Tamaño del tablero: 5x5.
+Pozos: 4.
+Flechas 2.
+2022-02-18 18:50:57,147 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[0 3 0 0 0]
+ [0 0 0 0 0]
+ [2 0 1 0 4]
+ [0 0 0 0 0]
+ [0 0 4 4 4]].
+2022-02-18 18:50:57,149 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}]].
+2022-02-18 18:50:57,150 |--> INFO: El jugador está en direccion N
+2022-02-18 18:51:00,216 |--> INFO: El jugador ha girado a la izquierda y ahora va en direccion O
+2022-02-18 18:51:00,216 |--> INFO: El jugador está en direccion O
+2022-02-18 18:51:02,048 |--> INFO: El jugador está en direccion O
+2022-02-18 18:51:05,481 |--> INFO: El jugador está en direccion O
+2022-02-18 18:51:06,535 |--> INFO: El jugador ha girado a la izquierda y ahora va en direccion S
+2022-02-18 18:51:06,535 |--> INFO: El jugador está en direccion S
+2022-02-18 18:51:07,305 |--> INFO: El jugador encontró el oro. El tablero queda así:
+[[0 1 0 0 0]
+ [0 0 0 0 0]
+ [2 0 0 0 4]
+ [0 0 0 0 0]
+ [0 0 4 4 4]]
+2022-02-18 18:51:07,306 |--> INFO: El jugador está en direccion S
+2022-02-18 18:51:10,023 |--> INFO: El jugador ha girado a la izquierda y ahora va en direccion E
+2022-02-18 18:51:10,023 |--> INFO: El jugador está en direccion A
+2022-02-18 18:51:14,248 |--> INFO: 
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-18 18:51:14.247938 ----------------------------------------
+2022-02-18 18:51:14,250 |--> INFO: 
+Tamaño del tablero: 4x4.
+Pozos: 3.
+Flechas 2.
+2022-02-18 18:51:14,250 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[2 1 4 0]
+ [0 0 4 0]
+ [0 0 4 0]
+ [0 0 3 0]].
+2022-02-18 18:51:14,251 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': True, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}]].
+2022-02-18 18:51:14,251 |--> INFO: El jugador está en direccion N
+2022-02-18 18:51:18,959 |--> INFO: El jugador ha girado a la derecha y ahora va en direccion E
+2022-02-18 18:51:18,959 |--> INFO: El jugador está en direccion E
+2022-02-18 18:51:20,272 |--> INFO: El jugador ha girado a la derecha y ahora va en direccion S
+2022-02-18 18:51:20,272 |--> INFO: El jugador está en direccion S
+2022-02-18 18:51:21,927 |--> INFO: El jugador fue eliminado por el Wumpus:
+[[1 0 4 0]
+ [0 0 4 0]
+ [0 0 4 0]
+ [0 0 3 0]]
+2022-02-18 18:54:38,196 |--> INFO: 
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-18 18:54:38.196127 ----------------------------------------
+2022-02-18 18:54:38,202 |--> INFO: 
+Tamaño del tablero: 5x5.
+Pozos: 4.
+Flechas 2.
+2022-02-18 18:54:38,203 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[0 0 3 1 0]
+ [0 4 0 0 4]
+ [0 4 2 4 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]].
+2022-02-18 18:54:38,204 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': True, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]].
+2022-02-18 18:54:38,204 |--> INFO: El jugador está en direccion N
+2022-02-18 18:54:39,972 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 3 1 0]
+ [0 4 0 0 4]
+ [0 4 2 4 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]]
+2022-02-18 18:54:45,019 |--> INFO: El jugador ha girado a la derecha y ahora va en direccion E
+2022-02-18 18:54:59,612 |--> INFO: 
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-18 18:54:59.612142 ----------------------------------------
+2022-02-18 18:54:59,616 |--> INFO: 
+Tamaño del tablero: 5x5.
+Pozos: 4.
+Flechas 2.
+2022-02-18 18:54:59,616 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[1 0 0 4 0]
+ [3 0 0 0 0]
+ [4 0 0 0 0]
+ [0 2 4 0 0]
+ [4 0 0 0 0]].
+2022-02-18 18:54:59,617 |--> INFO: Tablero de la partida:
+ [[{'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]].
+2022-02-18 18:54:59,617 |--> INFO: El jugador está en direccion N
+2022-02-18 18:55:04,436 |--> INFO: El jugador ha girado a la derecha y ahora va en direccion E
+2022-02-18 18:55:04,437 |--> INFO: El jugador está en direccion E
+2022-02-18 18:55:05,141 |--> INFO: El jugador encontró el oro. El tablero queda así:
+[[0 0 0 4 0]
+ [1 0 0 0 0]
+ [4 0 0 0 0]
+ [0 2 4 0 0]
+ [4 0 0 0 0]]
+2022-02-18 18:55:05,142 |--> INFO: El jugador está en direccion E
+2022-02-18 18:55:08,531 |--> INFO: El jugador ha girado a la izquierda y ahora va en direccion N
+2022-02-18 18:55:08,531 |--> INFO: El jugador está en direccion N
+2022-02-18 18:55:09,764 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 0 4 0]
+ [1 0 0 0 0]
+ [4 0 0 0 0]
+ [0 2 4 0 0]
+ [4 0 0 0 0]]
+2022-02-18 18:55:09,764 |--> INFO: El jugador está en direccion N
+2022-02-18 18:55:13,972 |--> INFO: El jugador ha girado a la izquierda y ahora va en direccion O
+2022-02-18 18:55:13,973 |--> INFO: El jugador está en direccion O
+2022-02-18 18:55:14,715 |--> INFO: El jugador está en direccion O
+2022-02-18 18:55:15,915 |--> INFO: El jugador ha girado a la izquierda y ahora va en direccion S
+2022-02-18 18:55:15,915 |--> INFO: El jugador está en direccion S
+2022-02-18 18:55:17,187 |--> INFO: El jugador está en direccion S
+2022-02-18 18:55:25,805 |--> INFO: 
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-18 18:55:25.805016 ----------------------------------------
+2022-02-18 18:55:25,811 |--> INFO: 
+Tamaño del tablero: 5x5.
+Pozos: 4.
+Flechas 2.
+2022-02-18 18:55:25,812 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[0 0 4 4 3]
+ [0 0 4 0 0]
+ [0 4 0 0 0]
+ [0 0 0 0 0]
+ [2 0 1 0 0]].
+2022-02-18 18:55:25,812 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': True, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]].
+2022-02-18 18:55:25,813 |--> INFO: El jugador está en direccion N
+2022-02-18 18:55:30,931 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 4 4 3]
+ [0 0 4 0 0]
+ [0 4 0 0 0]
+ [0 0 0 0 0]
+ [2 0 1 0 0]]
+2022-02-18 18:55:30,932 |--> INFO: El jugador está en direccion N
+2022-02-18 18:55:31,813 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 4 4 3]
+ [0 0 4 0 0]
+ [0 4 0 0 0]
+ [0 0 0 0 0]
+ [2 0 0 1 0]]
+2022-02-18 18:55:31,813 |--> INFO: El jugador está en direccion N
+2022-02-18 18:55:32,820 |--> INFO: El jugador ha girado a la izquierda y ahora va en direccion O
+2022-02-18 18:55:32,821 |--> INFO: El jugador está en direccion O
+2022-02-18 18:55:33,899 |--> INFO: El jugador está en direccion O
+2022-02-18 18:55:34,820 |--> INFO: El jugador está en direccion O
+2022-02-18 18:55:36,212 |--> INFO: El jugador está en direccion O
+2022-02-18 18:55:38,747 |--> INFO: El jugador encontró el oro. El tablero queda así:
+[[0 0 4 4 1]
+ [0 0 4 0 0]
+ [0 4 0 0 0]
+ [0 0 0 0 0]
+ [2 0 0 0 0]]
+2022-02-18 18:55:38,748 |--> INFO: El jugador está en direccion O
+2022-02-18 18:55:40,050 |--> INFO: El jugador ha girado a la izquierda y ahora va en direccion S
+2022-02-18 18:55:40,051 |--> INFO: El jugador está en direccion S
+2022-02-18 18:55:41,324 |--> INFO: El jugador calló en un pozo y quedó eliminado:
+[[0 0 4 1 0]
+ [0 0 4 0 0]
+ [0 4 0 0 0]
+ [0 0 0 0 0]
+ [2 0 0 0 0]]
+2022-02-18 18:55:48,300 |--> INFO: 
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-18 18:55:48.300752 ----------------------------------------
+2022-02-18 18:55:48,307 |--> INFO: 
+Tamaño del tablero: 5x5.
+Pozos: 4.
+Flechas 2.
+2022-02-18 18:55:48,308 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[4 4 2 0 0]
+ [0 3 0 0 4]
+ [0 0 0 0 0]
+ [0 0 0 0 1]
+ [4 0 0 0 0]].
+2022-02-18 18:55:48,308 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': True, 'brillo': True, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]].
+2022-02-18 18:55:48,308 |--> INFO: El jugador está en direccion N
+2022-02-18 18:55:51,325 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[4 4 2 0 0]
+ [0 3 0 0 4]
+ [0 0 0 0 0]
+ [0 0 0 0 1]
+ [4 0 0 0 0]]
+2022-02-18 18:55:51,326 |--> INFO: El jugador está en direccion N
+2022-02-18 18:55:55,099 |--> INFO: El jugador ha girado a la derecha y ahora va en direccion E
+2022-02-18 18:55:55,100 |--> INFO: El jugador está en direccion E
+2022-02-18 18:55:55,690 |--> INFO: El jugador está en direccion E
+2022-02-18 18:55:56,674 |--> INFO: El jugador ha girado a la derecha y ahora va en direccion S
+2022-02-18 18:55:56,675 |--> INFO: El jugador está en direccion S
+2022-02-18 18:55:57,354 |--> INFO: El jugador está en direccion S
+2022-02-18 18:55:58,826 |--> INFO: El jugador está en direccion S
+2022-02-18 18:55:59,939 |--> INFO: El jugador está en direccion S
+2022-02-18 18:56:04,267 |--> INFO: El jugador ha girado a la derecha y ahora va en direccion O
+2022-02-18 18:56:04,268 |--> INFO: El jugador está en direccion D
+2022-02-18 18:56:20,666 |--> INFO: 
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-18 18:56:20.666534 ----------------------------------------
+2022-02-18 18:56:20,673 |--> INFO: 
+Tamaño del tablero: 5x5.
+Pozos: 4.
+Flechas 2.
+2022-02-18 18:56:20,673 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[4 0 0 0 4]
+ [3 0 0 0 1]
+ [0 0 0 2 0]
+ [0 0 4 0 0]
+ [0 4 0 0 0]].
+2022-02-18 18:56:20,674 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]].
+2022-02-18 18:56:20,674 |--> INFO: El jugador está en direccion N
+2022-02-18 18:56:24,795 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[4 0 0 0 4]
+ [3 0 0 0 1]
+ [0 0 0 2 0]
+ [0 0 4 0 0]
+ [0 4 0 0 0]]
+2022-02-18 18:56:37,658 |--> INFO: 
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-18 18:56:37.658394 ----------------------------------------
+2022-02-18 18:56:37,665 |--> INFO: 
+Tamaño del tablero: 5x5.
+Pozos: 4.
+Flechas 2.
+2022-02-18 18:56:37,666 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[3 0 0 0 0]
+ [0 2 0 0 0]
+ [0 0 0 1 0]
+ [4 4 0 0 4]
+ [4 0 0 0 0]].
+2022-02-18 18:56:37,666 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]].
+2022-02-18 18:56:37,666 |--> INFO: El jugador está en direccion N
+2022-02-18 18:56:38,996 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[3 0 0 0 0]
+ [0 2 0 0 0]
+ [0 0 0 1 0]
+ [4 4 0 0 4]
+ [4 0 0 0 0]]
+2022-02-18 18:56:38,996 |--> INFO: El jugador está en direccion N
+2022-02-18 18:56:39,883 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[3 0 0 0 0]
+ [0 2 0 0 0]
+ [0 0 0 0 1]
+ [4 4 0 0 4]
+ [4 0 0 0 0]]
+2022-02-18 18:56:39,883 |--> INFO: El jugador está en direccion N
+2022-02-18 18:56:40,836 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[3 0 0 0 0]
+ [0 2 0 0 0]
+ [0 0 0 0 1]
+ [4 4 0 0 4]
+ [4 0 0 0 0]]
+2022-02-18 18:56:40,836 |--> INFO: El jugador está en direccion N
+2022-02-18 19:08:20,685 |--> INFO: El jugador ha introducido un comando no permitido:
+ .
+2022-02-18 20:00:21,681 |--> INFO: 
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-18 20:00:21.680889 ----------------------------------------
+2022-02-18 20:00:21,689 |--> INFO: 
+Tamaño del tablero: 4x4.
+Pozos: 3.
+Flechas 2.
+2022-02-18 20:00:21,690 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[1 4 3 0]
+ [0 0 0 0]
+ [0 4 4 0]
+ [0 0 2 0]].
+2022-02-18 20:00:21,690 |--> INFO: Tablero de la partida:
+ [[{'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}]].
+2022-02-18 20:00:21,691 |--> INFO: El jugador está en direccion N
+2022-02-18 20:00:34,488 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[1 4 3 0]
+ [0 0 0 0]
+ [0 4 4 0]
+ [0 0 2 0]]
+2022-02-18 20:00:34,489 |--> INFO: El jugador calló en un pozo y quedó eliminado:
+[[0 1 3 0]
+ [0 0 0 0]
+ [0 4 4 0]
+ [0 0 2 0]]
+2022-02-19 11:01:55,612 |--> INFO: 
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-19 11:01:55.612535 ----------------------------------------
+2022-02-19 11:01:55,619 |--> INFO: 
+Tamaño del tablero: 4x4.
+Pozos: 3.
+Flechas 2.
+2022-02-19 11:01:55,620 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[0 0 3 0]
+ [1 0 4 0]
+ [4 4 0 2]
+ [0 0 0 0]].
+2022-02-19 11:01:55,621 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}]
+ [{'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}]].
+2022-02-19 11:01:55,622 |--> INFO: El jugador está en direccion N
+2022-02-19 11:01:56,972 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 3 0]
+ [1 0 4 0]
+ [4 4 0 2]
+ [0 0 0 0]]
+2022-02-19 11:01:58,692 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 3 0]
+ [0 1 4 0]
+ [4 4 0 2]
+ [0 0 0 0]]
+2022-02-19 11:01:58,693 |--> INFO: El jugador calló en un pozo y quedó eliminado:
+[[0 0 3 0]
+ [0 0 1 0]
+ [4 4 0 2]
+ [0 0 0 0]]
+2022-02-19 11:02:12,620 |--> INFO: 
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-19 11:02:12.620189 ----------------------------------------
+2022-02-19 11:02:12,623 |--> INFO: 
+Tamaño del tablero: 4x4.
+Pozos: 3.
+Flechas 2.
+2022-02-19 11:02:12,624 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[3 0 0 0]
+ [0 0 0 0]
+ [4 0 4 2]
+ [0 0 4 1]].
+2022-02-19 11:02:12,624 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}]].
+2022-02-19 11:02:12,625 |--> INFO: El jugador está en direccion N
+2022-02-19 11:02:14,332 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[3 0 0 0]
+ [0 0 0 0]
+ [4 0 4 2]
+ [0 0 4 1]]
+2022-02-19 11:02:14,332 |--> INFO: El jugador está en direccion N
+2022-02-19 11:02:16,563 |--> INFO: El jugador ha girado a la izquierda y ahora va en direccion O
+2022-02-19 11:02:16,564 |--> INFO: El jugador está en direccion O
+2022-02-19 11:02:18,668 |--> INFO: El jugador fue eliminado por el Wumpus:
+[[3 0 0 0]
+ [0 0 0 0]
+ [4 0 4 1]
+ [0 0 4 0]]
+2022-02-19 11:02:24,484 |--> INFO: 
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-19 11:02:24.484297 ----------------------------------------
+2022-02-19 11:02:24,487 |--> INFO: 
+Tamaño del tablero: 4x4.
+Pozos: 3.
+Flechas 2.
+2022-02-19 11:02:24,488 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[4 0 0 0]
+ [1 0 4 0]
+ [0 3 2 0]
+ [0 0 0 4]].
+2022-02-19 11:02:24,488 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}]].
+2022-02-19 11:02:24,489 |--> INFO: El jugador está en direccion N
+2022-02-19 11:02:26,804 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[4 0 0 0]
+ [1 0 4 0]
+ [0 3 2 0]
+ [0 0 0 4]]
+2022-02-19 11:02:26,804 |--> INFO: El jugador está en direccion N
+2022-02-19 11:02:28,052 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[4 0 0 0]
+ [0 1 4 0]
+ [0 3 2 0]
+ [0 0 0 4]]
+2022-02-19 11:02:28,052 |--> INFO: El jugador calló en un pozo y quedó eliminado:
+[[4 0 0 0]
+ [0 0 1 0]
+ [0 3 2 0]
+ [0 0 0 4]]
+2022-02-19 11:26:39,985 |--> INFO: 
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-19 11:26:39.985445 ----------------------------------------
+2022-02-19 11:26:39,989 |--> INFO: 
+Tamaño del tablero: 4x4.
+Pozos: 3.
+Flechas 2.
+2022-02-19 11:26:39,989 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[0 0 0 4]
+ [3 0 0 4]
+ [2 0 4 1]
+ [0 0 0 0]].
+2022-02-19 11:26:39,990 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]].
+2022-02-19 11:26:39,990 |--> INFO: El jugador está en direccion N
+2022-02-19 11:30:27,789 |--> INFO: 
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-19 11:30:27.789624 ----------------------------------------
+2022-02-19 11:30:27,795 |--> INFO: 
+Tamaño del tablero: 5x5.
+Pozos: 4.
+Flechas 2.
+2022-02-19 11:30:27,796 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[4 0 0 0 0]
+ [0 0 0 0 0]
+ [0 4 0 0 1]
+ [0 0 0 0 0]
+ [4 3 0 2 4]].
+2022-02-19 11:30:27,796 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': True, 'brillo': False, 'brisa': False}]].
+2022-02-19 11:30:27,796 |--> INFO: El jugador está en direccion N
+2022-02-19 11:30:29,084 |--> INFO: El jugador ha introducido un comando no permitido:
+ 4.
+2022-02-19 11:30:41,301 |--> INFO: 
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-19 11:30:41.301859 ----------------------------------------
+2022-02-19 11:30:41,305 |--> INFO: 
+Tamaño del tablero: 4x4.
+Pozos: 3.
+Flechas 2.
+2022-02-19 11:30:41,305 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[2 0 0 0]
+ [0 4 4 0]
+ [0 0 1 0]
+ [0 4 0 3]].
+2022-02-19 11:30:41,306 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]].
+2022-02-19 11:30:41,306 |--> INFO: El jugador está en direccion N
+2022-02-19 11:30:42,469 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[2 0 0 0]
+ [0 4 4 0]
+ [0 0 1 0]
+ [0 4 0 3]]
+2022-02-19 11:30:43,573 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[2 0 0 0]
+ [0 4 4 0]
+ [0 0 0 1]
+ [0 4 0 3]]
+2022-02-19 11:40:15,345 |--> INFO: 
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-19 11:40:15.345693 ----------------------------------------
+2022-02-19 11:40:15,349 |--> INFO: 
+Tamaño del tablero: 4x4.
+Pozos: 3.
+Flechas 2.
+2022-02-19 11:40:15,349 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[0 0 0 0]
+ [4 4 2 1]
+ [0 0 0 4]
+ [0 0 3 0]].
+2022-02-19 11:40:15,350 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': True, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': True}]].
+2022-02-19 11:40:15,350 |--> INFO: El jugador está en direccion N
+2022-02-19 11:40:16,041 |--> INFO: El jugador ha introducido un comando no permitido:
+ 4.
+2022-02-19 13:15:14,005 |--> INFO: 
+
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-19 13:15:14.004894 ----------------------------------------
+2022-02-19 13:15:14,010 |--> INFO: 
+Tamaño del tablero: 5x5.
+Pozos: 4.
+Flechas 2.
+2022-02-19 13:15:14,010 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[4 0 0 0 4]
+ [0 0 0 0 3]
+ [0 0 0 0 0]
+ [2 0 1 0 0]
+ [0 4 4 0 0]].
+2022-02-19 13:15:14,011 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': True, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]].
+2022-02-19 13:15:14,011 |--> INFO: El jugador está en direccion N
+2022-02-19 13:15:18,859 |--> INFO: El jugador ha girado a la derecha y ahora va en direccion E
+2022-02-19 13:15:18,860 |--> INFO: El jugador está en direccion E
+2022-02-19 13:15:21,813 |--> INFO: El jugador calló en un pozo y quedó eliminado:
+[[4 0 0 0 4]
+ [0 0 0 0 3]
+ [0 0 0 0 0]
+ [2 0 0 0 0]
+ [0 4 1 0 0]]
+2022-02-19 13:15:26,028 |--> INFO: El jugador está en direccion E
+2022-02-19 13:15:28,284 |--> INFO: El jugador ha girado a la izquierda y ahora va en direccion N
+2022-02-19 13:15:28,285 |--> INFO: El jugador está en direccion N
+2022-02-19 13:15:29,100 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[4 0 0 0 4]
+ [0 0 0 0 3]
+ [0 0 0 0 0]
+ [2 0 0 0 0]
+ [0 4 1 0 0]]
+2022-02-19 13:15:29,100 |--> INFO: El jugador está en direccion N
+2022-02-19 13:15:32,885 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[4 0 0 0 4]
+ [0 0 0 0 3]
+ [0 0 0 0 0]
+ [2 0 0 0 0]
+ [0 4 0 1 0]]
+2022-02-19 13:15:32,886 |--> INFO: El jugador está en direccion N
+2022-02-19 13:15:34,035 |--> INFO: El jugador ha girado a la izquierda y ahora va en direccion O
+2022-02-19 13:15:34,035 |--> INFO: El jugador está en direccion O
+2022-02-19 13:15:34,892 |--> INFO: El jugador está en direccion O
+2022-02-19 13:15:35,644 |--> INFO: El jugador está en direccion O
+2022-02-19 13:15:36,556 |--> INFO: El jugador encontró el oro. El tablero queda así:
+[[4 0 0 0 4]
+ [0 0 0 0 1]
+ [0 0 0 0 0]
+ [2 0 0 0 0]
+ [0 4 0 0 0]]
+2022-02-19 13:15:36,557 |--> INFO: El jugador está en direccion O
+2022-02-19 13:15:40,331 |--> INFO: El jugador ha girado a la izquierda y ahora va en direccion S
+2022-02-19 13:15:40,332 |--> INFO: El jugador está en direccion S
+2022-02-19 13:15:41,252 |--> INFO: El jugador está en direccion S
+2022-02-19 13:15:42,435 |--> INFO: El jugador está en direccion S
+2022-02-19 13:15:43,308 |--> INFO: El jugador está en direccion S
+2022-02-19 13:15:44,708 |--> INFO: El jugador está en direccion S
+2022-02-19 13:15:47,924 |--> INFO: El jugador ha girado a la izquierda y ahora va en direccion E
+2022-02-19 13:15:47,924 |--> INFO: El jugador está en direccion A
+2022-02-19 13:17:17,699 |--> INFO: 
+
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-19 13:17:17.699411 ----------------------------------------
+2022-02-19 13:17:17,706 |--> INFO: 
+Tamaño del tablero: 5x5.
+Pozos: 4.
+Flechas 2.
+2022-02-19 13:17:17,706 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[0 0 4 0 0]
+ [3 0 4 0 0]
+ [0 1 0 0 0]
+ [0 0 4 0 0]
+ [0 4 0 2 0]].
+2022-02-19 13:17:17,707 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}]].
+2022-02-19 13:17:17,707 |--> INFO: El jugador está en direccion N
+2022-02-19 13:17:21,355 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 4 0 0]
+ [3 0 4 0 0]
+ [0 1 0 0 0]
+ [0 0 4 0 0]
+ [0 4 0 2 0]]
+2022-02-19 13:17:21,356 |--> INFO: El jugador está en direccion N
+2022-02-19 13:17:22,970 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 4 0 0]
+ [3 0 4 0 0]
+ [0 0 1 0 0]
+ [0 0 4 0 0]
+ [0 4 0 2 0]]
+2022-02-19 13:17:22,970 |--> INFO: El jugador está en direccion N
+2022-02-19 13:17:24,105 |--> INFO: El jugador ha girado a la derecha y ahora va en direccion E
+2022-02-19 13:17:24,106 |--> INFO: El jugador está en direccion E
+2022-02-19 13:17:25,266 |--> INFO: El jugador está en direccion E
+2022-02-19 13:17:26,898 |--> INFO: El jugador fue eliminado por el Wumpus:
+[[0 0 4 0 0]
+ [3 0 4 0 0]
+ [0 0 0 0 0]
+ [0 0 4 0 0]
+ [0 4 0 1 0]]
+2022-02-19 15:54:29,398 |--> INFO: 
+
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-19 15:54:29.398847 ----------------------------------------
+2022-02-19 15:54:29,406 |--> INFO: 
+Tamaño del tablero: 5x5.
+Pozos: 4.
+Flechas 2.
+2022-02-19 15:54:29,408 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[0 0 4 0 0]
+ [1 0 0 4 4]
+ [0 0 0 2 0]
+ [4 0 0 0 0]
+ [3 0 0 0 0]].
+2022-02-19 15:54:29,409 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]].
+2022-02-19 15:54:29,409 |--> INFO: El jugador está en direccion N
+2022-02-19 15:55:23,830 |--> INFO: 
+
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-19 15:55:23.830376 ----------------------------------------
+2022-02-19 15:55:23,843 |--> INFO: 
+Tamaño del tablero: 5x5.
+Pozos: 4.
+Flechas 2.
+2022-02-19 15:55:23,844 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[0 4 4 4 2]
+ [0 0 0 0 0]
+ [0 0 0 3 0]
+ [0 0 0 0 0]
+ [0 0 4 1 0]].
+2022-02-19 15:55:23,844 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]].
+2022-02-19 15:55:23,844 |--> INFO: El jugador está en direccion N
+2022-02-19 15:58:24,955 |--> INFO: 
+
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-19 15:58:24.955288 ----------------------------------------
+2022-02-19 15:58:24,959 |--> INFO: 
+Tamaño del tablero: 5x5.
+Pozos: 4.
+Flechas 2.
+2022-02-19 15:58:24,960 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[0 0 0 0 0]
+ [4 0 0 0 4]
+ [1 3 0 0 0]
+ [0 0 0 2 0]
+ [0 4 0 4 0]].
+2022-02-19 15:58:24,961 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]].
+2022-02-19 15:58:24,961 |--> INFO: El jugador está en direccion N
+2022-02-19 15:58:26,123 |--> INFO: El jugador encontró el oro. El tablero queda así:
+[[0 0 0 0 0]
+ [4 0 0 0 4]
+ [0 1 0 0 0]
+ [0 0 0 2 0]
+ [0 4 0 4 0]]
+2022-02-19 15:58:28,739 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 0 0 0]
+ [4 0 0 0 4]
+ [0 0 1 0 0]
+ [0 0 0 2 0]
+ [0 4 0 4 0]]
+2022-02-19 15:58:32,579 |--> INFO: El jugador ha girado a la izquierda y ahora va en direccion O
+2022-02-19 15:58:33,003 |--> INFO: El jugador ha girado a la izquierda y ahora va en direccion S
+2022-02-19 15:58:33,508 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 0 0 0]
+ [4 0 0 0 4]
+ [0 1 0 0 0]
+ [0 0 0 2 0]
+ [0 4 0 4 0]]
+2022-02-19 15:58:34,022 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 0 0 0]
+ [4 0 0 0 4]
+ [1 0 0 0 0]
+ [0 0 0 2 0]
+ [0 4 0 4 0]]
+2022-02-19 15:58:34,740 |--> INFO: El jugador ha sobrevivido al Wumpus. Este es el mapa final: [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': 0, 'tiene_el_oro': True, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': 0, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]]
+2022-02-19 16:04:31,070 |--> INFO: 
+
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-19 16:04:31.070336 ----------------------------------------
+2022-02-19 16:04:31,081 |--> INFO: 
+Tamaño del tablero: 5x5.
+Pozos: 4.
+Flechas 2.
+2022-02-19 16:04:31,081 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[0 0 2 0 4]
+ [0 1 0 4 0]
+ [3 0 4 0 0]
+ [0 0 0 0 4]
+ [0 0 0 0 0]].
+2022-02-19 16:04:31,082 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]].
+2022-02-19 16:04:31,082 |--> INFO: El jugador está en direccion N
+2022-02-19 16:07:36,723 |--> INFO: 
+
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-19 16:07:36.723464 ----------------------------------------
+2022-02-19 16:07:36,732 |--> INFO: 
+Tamaño del tablero: 5x5.
+Pozos: 4.
+Flechas 2.
+2022-02-19 16:07:36,733 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[0 0 4 3 0]
+ [0 0 4 0 4]
+ [0 1 0 0 0]
+ [0 0 0 0 0]
+ [0 0 4 0 2]].
+2022-02-19 16:07:36,734 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': True, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]].
+2022-02-19 16:07:36,734 |--> INFO: El jugador está en direccion N
+2022-02-19 16:07:37,667 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 4 3 0]
+ [0 0 4 0 4]
+ [0 0 1 0 0]
+ [0 0 0 0 0]
+ [0 0 4 0 2]]
+2022-02-19 16:07:41,451 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 4 3 0]
+ [0 0 4 0 4]
+ [0 0 0 1 0]
+ [0 0 0 0 0]
+ [0 0 4 0 2]]
+2022-02-19 16:07:46,491 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 4 3 0]
+ [0 0 4 0 4]
+ [0 0 0 0 1]
+ [0 0 0 0 0]
+ [0 0 4 0 2]]
+2022-02-19 16:07:56,042 |--> INFO: El jugador ha girado a la izquierda y ahora va en direccion O
+2022-02-19 16:07:56,601 |--> INFO: El jugador calló en un pozo y quedó eliminado:
+[[0 0 4 3 0]
+ [0 0 4 0 1]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 4 0 2]]
+2022-02-19 16:11:25,287 |--> INFO: 
+
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-19 16:11:25.287450 ----------------------------------------
+2022-02-19 16:11:25,296 |--> INFO: 
+Tamaño del tablero: 5x5.
+Pozos: 4.
+Flechas 2.
+2022-02-19 16:11:25,297 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[0 0 0 4 0]
+ [0 3 4 0 0]
+ [0 0 0 4 2]
+ [0 0 0 0 1]
+ [0 4 0 0 0]].
+2022-02-19 16:11:25,298 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]].
+2022-02-19 16:11:25,298 |--> INFO: El jugador está en direccion N
+2022-02-19 16:24:32,732 |--> INFO: 
+
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-19 16:24:32.728719 ----------------------------------------
+2022-02-19 16:24:32,739 |--> INFO: 
+Tamaño del tablero: 5x5.
+Pozos: 4.
+Flechas 2.
+2022-02-19 16:24:32,740 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[0 0 0 0 0]
+ [0 0 2 4 1]
+ [0 4 0 4 0]
+ [0 0 4 0 0]
+ [0 0 0 3 0]].
+2022-02-19 16:24:32,740 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}]].
+2022-02-19 16:24:32,740 |--> INFO: El jugador está en direccion N
+2022-02-19 16:24:37,200 |--> INFO: El jugador ha girado a la izquierda y ahora va en direccion O
+2022-02-19 16:24:38,408 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 0 0 1]
+ [0 0 2 4 0]
+ [0 4 0 4 0]
+ [0 0 4 0 0]
+ [0 0 0 3 0]]
+2022-02-19 16:25:10,423 |--> INFO: El jugador ha girado a la izquierda y ahora va en direccion S
+2022-02-19 16:25:10,831 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 0 1 0]
+ [0 0 2 4 0]
+ [0 4 0 4 0]
+ [0 0 4 0 0]
+ [0 0 0 3 0]]
+2022-02-19 16:25:11,759 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 1 0 0]
+ [0 0 2 4 0]
+ [0 4 0 4 0]
+ [0 0 4 0 0]
+ [0 0 0 3 0]]
+2022-02-19 16:25:12,767 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 1 0 0 0]
+ [0 0 2 4 0]
+ [0 4 0 4 0]
+ [0 0 4 0 0]
+ [0 0 0 3 0]]
+2022-02-19 16:25:14,688 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[1 0 0 0 0]
+ [0 0 2 4 0]
+ [0 4 0 4 0]
+ [0 0 4 0 0]
+ [0 0 0 3 0]]
+2022-02-19 16:25:16,151 |--> INFO: El jugador ha girado a la izquierda y ahora va en direccion E
+2022-02-19 16:25:16,841 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 0 0 0]
+ [1 0 2 4 0]
+ [0 4 0 4 0]
+ [0 0 4 0 0]
+ [0 0 0 3 0]]
+2022-02-19 16:25:17,864 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 0 0 0]
+ [0 0 2 4 0]
+ [1 4 0 4 0]
+ [0 0 4 0 0]
+ [0 0 0 3 0]]
+2022-02-19 16:25:18,879 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 0 0 0]
+ [0 0 2 4 0]
+ [0 4 0 4 0]
+ [1 0 4 0 0]
+ [0 0 0 3 0]]
+2022-02-19 16:25:22,512 |--> INFO: El jugador ha girado a la izquierda y ahora va en direccion N
+2022-02-19 16:25:23,239 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 0 0 0]
+ [0 0 2 4 0]
+ [0 4 0 4 0]
+ [0 1 4 0 0]
+ [0 0 0 3 0]]
+2022-02-19 16:25:25,489 |--> INFO: El jugador calló en un pozo y quedó eliminado:
+[[0 0 0 0 0]
+ [0 0 2 4 0]
+ [0 4 0 4 0]
+ [0 0 1 0 0]
+ [0 0 0 3 0]]
+2022-02-19 16:25:46,615 |--> INFO: 
+
+---------------------------------------- NUEVA PARTIDA CREADA @ 2022-02-19 16:25:46.615510 ----------------------------------------
+2022-02-19 16:25:46,621 |--> INFO: 
+Tamaño del tablero: 5x5.
+Pozos: 4.
+Flechas 2.
+2022-02-19 16:25:46,621 |--> INFO: 
+id_jugador = 1, id_wumpus = 2, id_oro = 3, id_pozos = 4.
+Posiciones iniciales:
+ [[0 0 0 0 2]
+ [4 4 0 0 0]
+ [0 0 0 0 0]
+ [4 3 0 0 4]
+ [0 0 0 0 1]].
+2022-02-19 16:25:46,623 |--> INFO: Tablero de la partida:
+ [[{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': True, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': True, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': True, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': True, 'olor': False, 'brillo': False, 'brisa': False}]
+ [{'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': True, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': False, 'flechas': None, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': False}
+  {'jugador': True, 'flechas': 2, 'tiene_el_oro': False, 'wumpus': False, 'oro': False, 'pozo': False, 'olor': False, 'brillo': False, 'brisa': True}]].
+2022-02-19 16:25:46,623 |--> INFO: El jugador está en direccion N
+2022-02-19 16:25:49,896 |--> INFO: El jugador ha girado a la derecha y ahora va en direccion E
+2022-02-19 16:25:52,216 |--> INFO: El jugador ha girado a la derecha y ahora va en direccion S
+2022-02-19 16:25:52,585 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 0 0 2]
+ [4 4 0 0 0]
+ [0 0 0 0 0]
+ [4 3 0 0 4]
+ [0 0 0 1 0]]
+2022-02-19 16:25:54,176 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 0 0 2]
+ [4 4 0 0 0]
+ [0 0 0 0 0]
+ [4 3 0 0 4]
+ [0 0 1 0 0]]
+2022-02-19 16:25:55,032 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 0 0 2]
+ [4 4 0 0 0]
+ [0 0 0 0 0]
+ [4 3 0 0 4]
+ [0 1 0 0 0]]
+2022-02-19 16:25:56,096 |--> INFO: El jugador avanza una casilla. El tablero queda así:
+[[0 0 0 0 2]
+ [4 4 0 0 0]
+ [0 0 0 0 0]
+ [4 3 0 0 4]
+ [1 0 0 0 0]]
+2022-02-19 16:26:01,576 |--> INFO: El jugador ha girado a la derecha y ahora va en direccion O
+2022-02-19 16:26:01,912 |--> INFO: El jugador calló en un pozo y quedó eliminado:
+[[0 0 0 0 2]
+ [4 4 0 0 0]
+ [0 0 0 0 0]
+ [1 3 0 0 4]
+ [0 0 0 0 0]]
